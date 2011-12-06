@@ -1,0 +1,11 @@
+{
+  "name": "HUZZAH",
+  "version": "0.0.0",
+  "homepage": "http://drupal.org/project/repoview",
+  "dependencies": {
+    "connect": ">= 1.1.4",
+    "express": ">= 2.4.3",
+    "gitteh": ">= 0.1.0",
+    "mime": ">= 1.2.1"
+  }
+}
