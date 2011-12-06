@@ -46,7 +46,8 @@ var getCommitCallback = function(request, response) {
           commitData.tree = commit.tree;
           commitData.diff = '';
           commitData.parents = commit.parents;
-          exec("git --work-tree='" + repoPath + "' --git-dir='" + repoPath + "'show " + commit.id, function (error, stdout, stderr) {
+          var command = "git --work-tree='" + repoPath + "' --git-dir='" + repoPath + "' show " + commit.id;
+          exec(command, function (error, stdout, stderr) {
             commitData.diff = stdout;
             response.send(commitData); 
           });
