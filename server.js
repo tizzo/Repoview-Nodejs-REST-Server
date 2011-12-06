@@ -14,7 +14,7 @@ var settings = {
  * Sends a 404 message.
  */
 var send404 = function (request, response) {
-  response.send("Not Found.\n", 404);
+  response.send({error: 'Item not found.'}, 404);
 }
 
 var getObjectCallback = function(request, response) {
